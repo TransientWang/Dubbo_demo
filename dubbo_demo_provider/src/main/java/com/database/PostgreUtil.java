@@ -3,7 +3,7 @@ package com.database;
 import java.sql.*;
 
 /**
- * @author 密码123456
+ * @author 王扶摇
  * @Title: PostageUtil
  * @ProjectName Dubbo_demo
  * @Description: TODO

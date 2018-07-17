@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
 
 /**
- * @author 密码123456
+ * @author 王扶摇
  * @Title: Student
  * @ProjectName Dubbo_demo
  * @Description: TODO

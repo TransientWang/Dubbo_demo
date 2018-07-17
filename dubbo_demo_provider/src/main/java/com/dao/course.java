@@ -1,6 +1,6 @@
 package com.dao;
 /**
- * @author 密码123456
+ * @author 王扶摇
  * @Title: course
  * @ProjectName Dubbo_demo
  * @Description: TODO

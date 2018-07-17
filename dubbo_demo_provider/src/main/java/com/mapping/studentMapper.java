@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Param;
 //import org.apache.ibatis.annotations.Param;
 
 /**
- * @author 密码123456
+ * @author 王扶摇
  * @Title: studentMapper
  * @ProjectName Dubbo_demo
  * @Description: TODO
