@@ -1,9 +1,10 @@
 package com;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
+
+//import org.mybatis.spring.annotation.MapperScan;
 
 /**
  * @author 王扶摇
@@ -13,9 +14,11 @@ import org.springframework.context.annotation.ImportResource;
  * @date 2018/7/16 0:37
  */
 
-@ImportResource(value = "classpath:provider")
+@ImportResource(value = "classpath:providor")
 @SpringBootApplication()
-@MapperScan("com.mapping")
+//@MapperScan("com.mapping")
+//@DubboComponentScan(basePackages = "com.service.impl")
+//@ComponentScan(basePackages = "com")
 public class Application {
 
     public static void main(String[] args) {
