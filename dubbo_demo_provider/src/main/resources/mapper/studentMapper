@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapping.studentMapper">
+    <resultMap id="studentMap" type="com.dao.Student">
+        <id column="s_id" jdbcType="INTEGER" property="id" />
+        <result column="s_name" jdbcType="VARCHAR" property="aname" />
+        <result column="s_number" jdbcType="VARCHAR" property="number" />
+        <result column="s_class" jdbcType="VARCHAR" property="aclass" />
+        <result column="s_college" jdbcType="VARCHAR" property="college" />
+    </resultMap>
+    <select id="selstudent" parameterType="java.lang.String" resultMap="studentMap">
+   SELECT
+	*
+FROM
+	t_student
+WHERE
+	s_name  = #{aname}
+
+</select>
+    <select id="selCount"  resultType="java.lang.Integer">
+   SELECT
+	COUNT(*)
+FROM
+	t_student
+WHERE
+	s_name  = '李岳杰'
+
+</select>
+</mapper>

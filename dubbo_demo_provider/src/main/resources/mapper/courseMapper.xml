@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapping.courseMapper">
+  <resultMap id="BaseResultMap" type="com.dao.course">
+    <id column="c_id" jdbcType="SMALLINT" property="cId" />
+    <result column="c_name" jdbcType="VARCHAR" property="cName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    c_id, c_name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_course
+    where c_id = #{cId,jdbcType=SMALLINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    delete from t_course
+    where c_id = #{cId,jdbcType=SMALLINT}
+  </delete>
+  <insert id="insert" parameterType="com.dao.course">
+    insert into t_course (c_id, c_name)
+    values (#{cId,jdbcType=SMALLINT}, #{cName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dao.course">
+    insert into t_course
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cId != null">
+        c_id,
+      </if>
+      <if test="cName != null">
+        c_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="cId != null">
+        #{cId,jdbcType=SMALLINT},
+      </if>
+      <if test="cName != null">
+        #{cName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dao.course">
+    update t_course
+    <set>
+      <if test="cName != null">
+        c_name = #{cName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where c_id = #{cId,jdbcType=SMALLINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dao.course">
+    update t_course
+    set c_name = #{cName,jdbcType=VARCHAR}
+    where c_id = #{cId,jdbcType=SMALLINT}
+  </update>
+</mapper>
