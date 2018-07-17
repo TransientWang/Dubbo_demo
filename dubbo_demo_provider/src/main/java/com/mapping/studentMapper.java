@@ -1,7 +1,6 @@
 package com.mapping;
 
-import com.dao.Student;
-import org.apache.ibatis.annotations.Param;
+//import org.apache.ibatis.annotations.Param;
 
 //import org.apache.ibatis.annotations.Mapper;
 //import org.apache.ibatis.annotations.Mapper;
@@ -26,7 +25,7 @@ public interface studentMapper {
      * @param aname 学生信息
      * @return com.dao.Student
      */
-   public Student selstudent(@Param("aname") String aname);
+//   public Student selstudent(@Param("aname") String aname);
    /**
     * 查询student表中的记录数
     *

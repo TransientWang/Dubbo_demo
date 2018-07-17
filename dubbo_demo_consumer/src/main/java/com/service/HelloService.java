@@ -1,4 +1,6 @@
-package com.dao;
+package com.service;
+
+import com.dao.Student;
 
 public interface HelloService {
    /**
@@ -10,5 +12,6 @@ public interface HelloService {
     * @param aname  学生姓名
     * @return com.dao.Student 学生的信息
     */
+//   @Reference
     public Student hello(String aname);
 }

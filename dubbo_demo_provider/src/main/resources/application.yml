@@ -8,10 +8,16 @@ spring:
         password: root
         driver-class-name: org.postgresql.Driver
         name: test
+
+
+
+
+
 mybatis:
 
 #    config-location: classpath:MbatisConfig
     mapper-locations: classpath:mapper/*
+
 
 
 #        # 使用druid数据源

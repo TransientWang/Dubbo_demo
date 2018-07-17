@@ -14,7 +14,7 @@
 FROM
 	t_student
 WHERE
-	s_name  = #{aname}
+	s_name  = #{aname} limit 1
 
 </select>
     <select id="selCount"  resultType="java.lang.Integer">
