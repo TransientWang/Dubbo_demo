@@ -17,10 +17,10 @@
     <dubbo:protocol name="dubbo" port="-1" />
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.service.HelloService"
-                   ref="helloService" timeout="10000" />
+    <!--<dubbo:service interface="com.service.HelloService"-->
+                   <!--ref="helloService" timeout="10000" />-->
 
     <!-- 和本地 bean 一样实现服务 -->
-    <bean id="helloService" class="com.service.impl.HelloServiceImpl" />
+    <!--<bean id="helloService" class="com.service.impl.HelloServiceImpl" />-->
 
 </beans>

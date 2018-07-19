@@ -1,7 +1,7 @@
 package com.dao;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.service.HelloService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FController {
 
-    @Autowired
+   @Reference(interfaceClass = com.service.HelloService.class)
     HelloService helloService;
 
     @RequestMapping("/{aname}")
