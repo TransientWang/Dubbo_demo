@@ -1,8 +1,10 @@
 package com;
 
+import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ImportResource;
+import org.springframework.context.annotation.ComponentScan;
 
 //import org.mybatis.spring.annotation.MapperScan;
 
@@ -14,11 +16,11 @@ import org.springframework.context.annotation.ImportResource;
  * @date 2018/7/16 0:37
  */
 
-@ImportResource(value = "classpath:providor")
+//@ImportResource(value = "classpath:providor")
 @SpringBootApplication()
-//@MapperScan("com.mapping")
-//@DubboComponentScan(basePackages = "com.service.impl")
-//@ComponentScan(basePackages = "com")
+@MapperScan("com.mapping")
+@DubboComponentScan(basePackages = "com.service.impl")
+@ComponentScan(basePackages = "com")
 public class Application {
 
     public static void main(String[] args) {

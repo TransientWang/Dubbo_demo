@@ -4,6 +4,7 @@ import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ConsumerConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * @author 密码123456
@@ -12,7 +13,7 @@ import org.springframework.context.annotation.Bean;
  * @Description: TODO
  * @date 2018/7/17 18:15
  */
-//@Configuration
+@Configuration
 public class DubboConfiguration {
     @Bean
     public ApplicationConfig applicationConfig() {
@@ -32,7 +33,10 @@ public class DubboConfiguration {
     public RegistryConfig registryConfig() {
         RegistryConfig registryConfig = new RegistryConfig();
         registryConfig.setAddress("zookeeper://127.0.0.1:2181");
-        registryConfig.setClient("zkClient");
+        registryConfig.setClient("zkclient");
+        registryConfig.setProtocol("dubbo");
+
+        registryConfig.setPort(-1);
         return registryConfig;
     }
 }

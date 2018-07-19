@@ -6,6 +6,8 @@ package com.mapping;
 //import org.apache.ibatis.annotations.Mapper;
 //import org.apache.ibatis.annotations.Param;
 
+import com.dao.Student;
+
 /**
  * @author 王扶摇
  * @Title: studentMapper
@@ -38,4 +40,5 @@ public interface studentMapper {
     *
     */
    public int selCount();
+   public Student selstudent(String aname);
 }
