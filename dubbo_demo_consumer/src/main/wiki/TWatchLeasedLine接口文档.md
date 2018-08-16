@@ -216,7 +216,7 @@ data 单条字段格式：
          "comment":"瓜子二手车合肥职场专线",
          "createTime":"2018-08-10 07:43:04.000"
      }
- }
+    }
 
 
 
@@ -273,18 +273,18 @@ data 字段格式：
     
     
     {
-    "result":0,
-    "description":"成功",
-    "errorCode":0,
-    "data":{
-        "id":1196,
-        "deviceId":231,
-        "name":"瓜子二手1",
-        "port":3544,
-        "targetIp":"下午测试",
-        "comment":"瓜子二手车合肥职场联通专线",
-        "createTime":"2018-08-10 07:43:04.000"
-    }}
+     "result":0,
+     "description":"成功",
+     "errorCode":0,
+     "data":{
+         "id":1196,
+         "deviceId":231,
+         "name":"瓜子二手1",
+         "port":3544,
+         "targetIp":"下午测试",
+         "comment":"瓜子二手车合肥职场联通专线",
+         "createTime":"2018-08-10 07:43:04.000"
+     }}
 
 
 ## 5.通过专线ID删除专线信息
@@ -320,11 +320,11 @@ data 字段格式：
 
 
     {
-    "result":0,
-    "description":"删除成功，删除专线数:1 删除企业专线数:0",
-    "errorCode":0,
-    "data":null
-    }
+     "result":0,
+     "description":"删除成功，删除专线数:1 删除企业专线数:0",
+     "errorCode":0,
+     "data":null
+     }
 
 
  ## 6.通过专线ID的set集合查询出所有符合条件的专线信息
@@ -358,10 +358,10 @@ data 字段格式：
 
 
     {
-    "result":0,
-    "description":"成功",
-    "errorCode":0,
-    "data":[
+     "result":0,
+     "description":"成功",
+     "errorCode":0,
+     "data":[
         {
             "id":1203,
             "deviceId":1,
@@ -380,4 +380,4 @@ data 字段格式：
             "comment":"北京承启通(山东通服)济南专线/必要商城",
             "createTime":"2018-08-10 07:43:04.000"
         }
-    ]}
+     ]}
