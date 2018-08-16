@@ -51,7 +51,7 @@
 |createTime|否|创建时间|
 
 *返回JSON数据格式
-
+```
     { 
         "result":0,
         "description":"成功",
@@ -67,7 +67,7 @@
               }
         }
         }
-
+```
 ## 2.获取全部交换机信息
 > 接口方法：ApiResult&lt;List&lt;TWatchZabbixServer&gt;&gt;  getAllTWatchZabbixServer(TWatchZabbixServer tWatchZabbixServer)
 
@@ -106,7 +106,7 @@
 
 * 返回JSON数据格式
 
-
+```
     { 
             "result":0,
             "description":"成功",
@@ -129,6 +129,7 @@
                     }
             }
             }
+```            
 ## 3.通过交换机ID获取交换机记录
 > 接口方法：ApiResult&lt;TWatchZabbixServer&gt;&nbsp; getTWatchZabbixServer(TWatchZabbixServert tWatchZabbixServer)
 
@@ -168,7 +169,7 @@
 
 
 *返回JSON数据格式
-
+```
     {
         "result":0,
         "description":"成功",
@@ -184,7 +185,7 @@
             }
         ]
     }
-
+```
 
 ## 4.通过zabbix serverID更新专线信息
 > 接口方法：ApiResult&lt;TWatchZabbixServer&gt;&nbsp; updateTWatchZabbixServer(TWatchZabbixServer TWatchZabbixServer)
@@ -234,7 +235,7 @@
 
 
 * 返回JSON数据格式
-
+```
         {
             "result":0,
             "description":"成功",
@@ -249,6 +250,7 @@
                     "createTime":1533622581000
                 }
         }
+```
 ## 5.通过交换机ID删除交换机记录
 > 接口方法：ApiResult&nbsp; deleteTWatchZabbixServer(TWatchZabbixServer tWatchZabbixServer)
 
@@ -277,10 +279,11 @@
 |失败|-1|id值为空|  
 
 * 返回JSON数据格式
-    
+```    
       {
           "result":0,
           "description":"删除成功",
           "errorCode":0,
           "data":null
-          }
+      }
+```

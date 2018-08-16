@@ -52,7 +52,7 @@
 
 
 *返回JSON数据格式
-
+```
     {
         "result":0,
         "description":"成功",
@@ -65,7 +65,7 @@
             "createTime":"2018-08-10 09:33:39.019"
         }
     }
-    
+```
     
 ## 2.获取全部企业专线信息或者根据企业ID获得符合调条件的所有信息
 > 接口方法：ApiResult&lt;List&lt;TWatchEnterpriseLeasedLine&gt;&gt;  getAllTwatchEnterpriseLeasedLine(TwatchEnterpriseLeasedLine twatchEnterpriseLeasedLine)
@@ -111,6 +111,48 @@ data 单条字段格式：
 |失败|-1|没有记录|  
 |失败|-1|发生异常，获取失败|  
 
+
+* 返回JSON格式
+
+```
+{
+    "result":0,
+    "description":"成功",
+    "errorCode":0,
+    "data":[
+        {
+            "id":69,
+            "enterpriseId":600000,
+            "leasedLineId":2222,
+            "comment":null,
+            "createTime":"2018-08-15 16:31:07"
+        },
+        {
+            "id":69,
+            "enterpriseId":600000,
+            "leasedLineId":2222,
+            "comment":null,
+            "createTime":"2018-08-15 16:31:07"
+        },
+        {
+            "id":69,
+            "enterpriseId":600000,
+            "leasedLineId":2222,
+            "comment":null,
+            "createTime":"2018-08-15 16:31:07"
+        },
+        {
+            "id":69,
+            "enterpriseId":600000,
+            "leasedLineId":2222,
+            "comment":null,
+            "createTime":"2018-08-15 16:31:07"
+        }
+    ]
+}
+```
+
+
 ## 3.根据企业专线表ID获取到企业专线的信息
 > 接口方法：ApiResult&lt;TWatchEnterpriseLeasedLine&gt;&nbsp; getTWatchEnterpriseLeasedLine(TWatchEnterpriseLeasedLine tWatchEnterpriseLeasedLine)
 
@@ -146,6 +188,21 @@ data 单条字段格式：
 |失败|-1|没有记录|  
 |失败|-1|发生异常，获取失败|  
 
+* JSON数据格式
+
+```
+{
+    "result":0,
+    "description":"成功",
+    "errorCode":0,
+    "data":{
+        "id":69,
+        "enterpriseId":600000,
+        "leasedLineId":2222,
+        "createTime":1534321867658
+    }
+}
+```
 ## 4.根据ID更新专线的信息
 > 接口方法：ApiResult&lt;TWatchEnterpriseLeasedLine&gt;&nbsp; updateEnterpriseLeasedLine(TWatchEnterpriseLeasedLine tWatchEnterpriseLeasedLine)
 
@@ -186,7 +243,23 @@ data 单条字段格式：
 |comment|是|备注|
 |createTime|否|创建时间|
 
-## 5.根据企业专线表的ID
+* JSON数据格式
+
+```
+{
+    "result":0,
+    "description":"成功",
+    "errorCode":0,
+    "data":{
+        "id":69,
+        "enterpriseId":600000,
+        "leasedLineId":2222,
+        "comment":"修改",
+        "createTime":1534321867658
+    }
+}
+```
+## 5.根据企业专线表的ID删除企业专线信息
 > 接口方法：ApiResult&nbsp; deleteTWatchEnterpriseLeasedLine(TWatchEnterpriseLeasedLine tWatchEnterpriseLeasedLine)
 
 * 输入参数字段
@@ -214,3 +287,12 @@ data 单条字段格式：
 |失败|-1|发生异常，删除记录失败|  
 |失败|-1|输入参数为空|  
 |失败|-1|ID不能都为空|  
+
+*  JSON数据格式
+```
+ {
+    "result":0,
+    "errorCode":0,
+    "description":"删除成功，删除企业专线数:1"
+ }
+```

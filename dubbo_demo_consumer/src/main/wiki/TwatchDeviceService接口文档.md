@@ -55,7 +55,7 @@
 
 * 返回数据JSON格式
 
-
+```
     { 
     "result":0,
     "description":"成功",
@@ -72,6 +72,7 @@
         "createTime": 1533891436297
     }
     }
+```
 
 ## 2.获取全部交换机信息
 > 接口方法：ApiResult&lt;List&lt;TWatchDevice&gt;&gt;  getAllTWatchDevice(TWatchDevice tWatchDevice)
@@ -112,7 +113,7 @@ data 单条字段格式：
 
 * 返回JSON数据格式
 
-
+```
     { 
     "result":0,
     "description":"成功",
@@ -153,6 +154,7 @@ data 单条字段格式：
         }
     ]
     }
+```
 
 ## 3.通过交换机ID获取交换机记录
 > 接口方法：ApiResult&lt;TWatchDevice&gt;&nbsp; getTWatchDevice(TWatchDevice tWatchDevice)
@@ -196,7 +198,7 @@ data 字段格式：
 
 * 返回JSON数据格式
 
-
+```
     {
     "result":0,
     "description":"成功",
@@ -213,6 +215,7 @@ data 字段格式：
         "createTime": 1533891436297
     }
     }
+```
 ## 4.通过交换机ID更新专线信息
 > 接口方法：ApiResult&lt;TWatchDevice&gt;&nbsp; updateTWatchDevice(TWatchDevice tWatchDevice)
 
@@ -263,7 +266,7 @@ data 字段格式：
 
 *  返回JSON数据格式
 
-
+```
     {
     "result":0,
     "description":"成功",
@@ -280,7 +283,7 @@ data 字段格式：
         "createTime": 1533891436297
     }
      }
-
+```
 ## 5.通过交换机ID删除交换机记录
 > 接口方法：ApiResult&nbsp; deleteTWatchDevice(TWatchDevice tWatchDevice)
 
@@ -311,10 +314,11 @@ data 字段格式：
 
 
 * 返回JSON数据格式
-
-      {
+```
+     {
       "result":0,
       "description":"删除成功，删除专线数:24 删除企业专线数:1",
       "errorCode":0,
       "data":null
-      }
+     }
+```
