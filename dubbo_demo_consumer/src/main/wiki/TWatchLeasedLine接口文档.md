@@ -55,8 +55,8 @@
  * 返回值JSON串
  
 
-
-      {
+```
+{
             "result":0,
             "description":"成功",
             "errorCode":0,
@@ -70,7 +70,7 @@
                 "createTime":"2018-08-10 07:19:37.802"
                }
            }
-  
+``` 
 
 ## 2.获取全部专线信息
 > 接口方法： &nbsp; ApiResult&lt;List&lt;TwatchLeasedLine&gt;&gt; getAllTwatchLeasedLine(TwatchLeasedLine twatchLeasedLine)
@@ -110,7 +110,7 @@ data 单条字段格式：
 
 * 返回数据JSON格式
 
-
+```
       {
         "result":0,
         "description":"成功",
@@ -162,7 +162,7 @@ data 单条字段格式：
                 "createTime":"2018-08-10 07:43:04.000"
             }
             ]}
-    
+```
 
 ## 3.根据专线ID获取到专线的信息
 > 接口方法：ApiResult&lt;TWatchLeasedLine&gt;&nbsp; getLeasedLine(String switchID)
@@ -202,7 +202,7 @@ data 单条字段格式：
 
 * 返回JSON格式
 
-
+```
     {
          "result":0,
          "description":"成功",
@@ -217,7 +217,7 @@ data 单条字段格式：
              "createTime":"2018-08-10 07:43:04.000"
          }
      }
-
+```
 
 
 ## 4.根据ID更新专线的信息
@@ -270,7 +270,7 @@ data 字段格式：
 
 * 返回数据JSON格式
 
-
+```
      {
         "result":0,
         "description":"成功",
@@ -285,7 +285,7 @@ data 字段格式：
             "createTime":"2018-08-10 07:43:04.000"
               }
       }
-
+```
 
 ## 5.通过专线ID删除专线信息
 > 接口方法：ApiResult&nbsp; deleteLeasedLineByID(TWatchLeasedLine tWatchLeasedLine)
@@ -318,16 +318,16 @@ data 字段格式：
 
 * 返回JSON数据格式
 
-
-    {
+```
+{
         "result":0,
         "description":"删除成功，删除专线数:1 删除企业专线数:0",
         "errorCode":0,
         "data":null
-        }
+}
+```
 
-
- ## 6.通过专线ID的set集合查询出所有符合条件的专线信息
+ ##  6.通过专线ID的set集合查询出所有符合条件的专线信息
  > 接口方法： public&nbsp; ApiResult<List\<TWatchLeasedLine>>&nbsp; getLeadedLineByIdSet(Set<Integer> idSet)
  
  * 输入参数
@@ -355,9 +355,8 @@ data 字段格式：
 |失败|-1|未查询到记录|  
 
 * 返回JSON数据格式
-
-
-    {
+```
+{
         "result":0,
         "description":"成功",
         "errorCode":0,
@@ -381,3 +380,4 @@ data 字段格式：
                 "createTime":"2018-08-10 07:43:04.000"
             }
         ]} 
+```
